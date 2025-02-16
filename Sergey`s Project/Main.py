@@ -36,7 +36,7 @@ else:
     print("Wrong !!! You supposed to enter lower number then sum of first two numbers :(")
 """
 
-# Ex_4 - append two new ports to consisting list.
+# Ex_4 - append two new ports to consisting array.
 
 """
 ports = [21,22,23,25]
@@ -49,7 +49,7 @@ print(ports)
 # Ex_5 - ask for five numbers from user. Numbers must be between 1 and 5 and if they don`t, show error.
 # In the end, if all numbers match the policy, print the list of numbers.
 
-"""
+
 num_list = []
 
 print("Please enter 5 numbers between 1 and 5")
@@ -58,10 +58,12 @@ for i in range(5):
     num1 = int(input("Enter a number >"))
     if 1 <= num1 <= 5:
         num_list.append(num1)
+        summary = sum(num_list)
     else:
         print("Number you entered was NOT between 1 and 5 :(")
 print("Numbers you entered: {0}".format(num_list))
-"""
+print("The summary is: {0}".format(summary))
+
 
 # Guessing game - Program makes every time random number, user must to guess the number. With every guess, program
 # will show if the number users inserted is need to be higher or lower. In the end after user guesses the right
